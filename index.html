@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+  <head >
+    <title>WeIOFridge Dashboard</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="js/raphael.2.1.0.min.js"></script>
+    <script src="js/justgage.1.0.1.min.js"></script>
+
+    <script src="js/weiofridge.js"></script>
+
+    <script data-main="www/libs/weioLibs" src="www/libs/require.js"></script>
+
+    <title>WeIOFridge Dashboard</title>
+
+    <style>
+      html * {
+          font-family: sans-serif;
+      }
+      
+      .gaugeTitle {
+          margin: 0em;
+          text-align: middle;
+          font-size: x-large;
+      }
+      
+      body {
+        text-align: center;
+      }
+      
+      .gauge {
+        width:200px; height:160px;
+        display: inline-block;
+        margin: 0em;
+      }
+          
+      p {
+        display: block;
+        width: 450px;
+        margin: 2em auto;
+        text-align: left;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1>WeIOFridge Dashboard</h1>
+
+    <div class="gaugeTitle">Kitchen</div>
+    <div class="gauge" id="kitchenTemp"></div>
+    <div class="gauge" id="kitchenHumidity"></div>
+    
+    <div class="gaugeTitle">Fridge</div>
+    <div class="gauge" id="freezerTemp"></div>
+    <div class="gauge" id="fridgeTemp"></div>
+    
+    <div class="timer" id="timer">Starting...</div>
+
+  </body>
+</html>
